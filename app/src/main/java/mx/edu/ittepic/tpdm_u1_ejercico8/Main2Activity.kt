@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class Main2Activity : AppCompatActivity() {
 
-    var txtIn : EditText ?= null
-    var txtOut : EditText ?= null
+    var txtIn :  EditText?= null
+    var txtOut : TextView ?= null
     var btnM : Button ?= null
 
     var indice = 0
@@ -31,7 +32,7 @@ class Main2Activity : AppCompatActivity() {
 
             indice  = txtIn?.text.toString().toInt()
 
-            if(indice > arrayCadena.size)
+            if(indice > arrayCadena.size-1)
                 Toast.makeText(this,"El indice insertado sobrepasa el tamaño del arreglo", Toast.LENGTH_LONG).show()
             else
             txtOut?.setText("posición : " +indice+" -> "+arrayCadena[indice].toString())

@@ -13,10 +13,11 @@
         android:layout_height="wrap_content"
         android:text="POSICIÓN AM OSTRAR"
         />
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textIn"
+        android:inputType="number"
         />
     <Button
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
         android:text="MOSTRAR"
         android:id="@+id/botonMostrar"
         />
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textOut"
